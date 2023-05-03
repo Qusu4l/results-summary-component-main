@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="dist/output.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Your Result
-  76
-  of 100
+<body class="bg-gray-800 w-screen h-screen flex flex-col justify-center items-center">
+  <main>
+    <div class="w-[46rem] h-[32rem] rounded-[35px] bg-white drop-shadow-[0_30px_60px_rgba(61,108,236,0.15)] flex ">
+      <div class="w-[23rem] h-[32rem] rounded-[32px] bg-gradient-to-b from-[#7755FF] via-[#6943FF] to-[#2F2CE9] ">
+        <div class="flex flex-col items-center">
+          <h2 class="text-[#CAC9FF] text-[24px] mt-[38px]">Your Result</h2>
+          <div
+            class="flex flex-col items-center justify-center w-[200px] h-[200px] rounded-full bg-gradient-to-b from-[#4D21C9] to-transparent ">
+            <h3 class="text-white text-[72px] font-bold ">76</h3>
+            <span class="text-[#CAC9FF] text-[18px] mt-[4px]">of 100</span>
+          </div>
+          <div class="w-[260px] h-[134px] flex flex-col items-center justify-center mt-[44px]">
+            <h1 class="text-white text-[32px]">Great</h1>
+            <span class="text-[#CAC9FF] text-[18px] text-center mt-[14px]">Your performance excedd 65% of the people
+              conducting the test here!</span>
+          </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        </div>
+      </div>
+      <div class="w-[23rem] h-[32rem] flex flex-col mt-[38px] ml-[40px]">
+        <h4 class="text-[24px] font-bold">Summary</h4>
+        <div class="w-[18rem] h-[17rem] grid grid-cols-4-{56px} mt-[28px] gap-[16px]">
+          <div class="flex bg-fixed bg-gradient-to-br from-white  to-red-500 via-red-50 rounded-[12px]">
+            <img  class="w-[20px] h-[20px] "src="assets/images/icon-reaction.svg"> 
+            <div>
+              <span>Reaction</span>
+              <span>80 </span>
+              <span>/ 100</span>
+            </div>
+          </div>
+          <div class="bg-fixed bg-gradient-to-bl from-white to-[#FFB21E] via-yellow-50  rounded-[12px]">
+            <span>Memory</span>
+          </div>
+          <div class="bg-fixed bg-gradient-to-br from-white to-[#00BB8F] via-green-50 rounded-[12px]">
+            <span>Verbal</span>
+          </div>
+          <div class="bg-fixed bg-gradient-to-br from-white to-[#1125D6] via-blue-50 rounded-[12px]"><span>Visual</span>
+          </div>
+        </div>
 
-  Reaction
-  80 / 100
+        <button
+          class="w-[18rem] h-[3.5rem] bg-[#303B59] text-white mt-[41px] rounded-[128px] hover:bg-gradient-to-b from-[#7755FF] via-[#6943FF] to-[#2F2CE9]">Continue</button>
 
-  Memory
-  92 / 100
+      </div>
+    </div>
 
-  Verbal
-  61 / 100
+  </main>
 
-  Visual
-  72 / 100
 
-  Continue
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Qusu4l">Qusu4l</a>.
   </div>
 </body>
+
 </html>
